@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивное меню</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="menu">
+        <label for="burger">
+            <div hidden class="burger">
+                <div class="burger__part"></div>
+                <div class="burger__part"></div>
+                <div class="burger__part"></div>
+            </div>
+        </label>
+        <input type="checkbox" id="burger" class="menu__collapse">
+        <menu class="menu__list menu__list_main">
+            <li class="menu__item"><a class="menu__link" href="#">link-1</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">link-2</a></li>
+            <li class="menu__item"><label for="menu__sub-3" class="menu__link">link-3</label>
+                <input type="checkbox" id="menu__sub-3" class="menu__collapse">
+                <menu class="menu__list menu__list_sub-list">
+                    <li class="menu__item menu__item_sub-item"><a href="#" class="menu__link">sublink-1</a></li>
+                    <li class="menu__item menu__item_sub-item"><a href="#" class="menu__link">sublink-2</a></li>
+                    <li class="menu__item menu__item_sub-item"><a href="#" class="menu__link">sublink-3</a></li>
+                    <li class="menu__item menu__item_sub-item"><a href="#" class="menu__link">sublink-4</a></li>
+                </menu>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#">link-4</a></li>
+        </menu>
+    </nav>
+
+    
+</body>
+</html>
